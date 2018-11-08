@@ -2,9 +2,9 @@ class HomeController < ApplicationController
 
   def index
     @crypto = Crypto.new
-      if Crypto.find(1) == nil
+      #if Crypto.find(1) == nil
         Scrapcrypto.new.save
-      end
+      #end
   end
 
   def show
