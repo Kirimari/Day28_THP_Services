@@ -2,12 +2,14 @@ class HomeController < ApplicationController
 
   def index
     @crypto = Crypto.new
-      #if Crypto.find(1) == nil
-        Scrapcrypto.new.save
-      #end
+
   end
 
   def show
+    if Crypto.find(1) == nil
+    Scrapcrypto.new.save
+    end
+
     @crypto = Crypto.find_by(crypto_params)
   end
 
