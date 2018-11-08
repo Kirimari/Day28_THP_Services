@@ -27,8 +27,8 @@ même alors qu'on scrappe plusieurs fois le site.
 -7) ```heroku run rails db:migrate```.</br>
 -8) ```heroku open```.</br>
   Pour la seconde application : </br>
--8) ```rails s```.</br>
--9)   aller sur localhost:3000 sur votre navigateur.</br>
+-9) ```rails s```.</br>
+-10)   aller sur localhost:3000 sur votre navigateur.</br>
   
 
 <h3> Pour voir l'app numero 1 en production :</h3>
