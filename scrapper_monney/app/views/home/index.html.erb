@@ -1,7 +1,9 @@
-<h1> Bonjour </h1>
+<h1 align="center"> Salut, Tu peux sélectionner le nom de ta cryptomonnaie : </h1>
 
-<%= form_for :cryptos do |f| %>
-      <%= f.label :name %>
-      <%= f.collection_select :id, Crypto.all, :id, :name %>
-      <%= f.submit "Choisir la crypto " %>
-    <% end %>
+    <div class="dropdown" style="text-align: center">
+      <%= form_for :cryptos do |f| %>
+        <%= f.label :name %> :
+        <%= f.collection_select :id, Crypto.all, :id, :name %>
+        <%= f.submit "Choisir la crypto " %>
+      <% end %>
+    </div>
