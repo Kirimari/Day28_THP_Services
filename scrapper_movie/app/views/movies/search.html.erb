@@ -1,0 +1,16 @@
+<%= form_tag("/search", method: "get") do %>
+<div class="form-group">
+  <%= label_tag(:q, "Search for:") %>
+</div>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Search") %>
+<% end %>
+
+<p>
+<% @film.each do |m| %>
+  <%= m[:name] %>
+  <%= m[:date] %>
+  <img src="https://image.tmdb.org/t/p/w185_and_h278_bestv2<%=m[:img]%>"  style="width:90px;height:142px;">
+
+<%end%>
+</p>
