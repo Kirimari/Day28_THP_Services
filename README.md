@@ -23,10 +23,10 @@ même alors qu'on scrappe plusieurs fois le site.
 -4) ```bundle install```</br>
 -5) ```rails db:create```.</br>
 -6) ```rails db:migrate```.</br>
-  Pour la premiere application : 
+  Pour la premiere application : </br>
 -7) ```heroku run rails db:migrate```.</br>
 -8) ```heroku open```.</br>
-  Pour la seconde application : 
+  Pour la seconde application : </br>
 -8) ```rails s```.</br>
 -9)   aller sur localhost:3000 sur votre navigateur.</br>
   
