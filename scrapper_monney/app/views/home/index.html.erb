@@ -1,0 +1,7 @@
+<h1> Bonjour </h1>
+
+<%= form_for :cryptos do |f| %>
+      <%= f.label :name %>
+      <%= f.collection_select :id, Crypto.all, :id, :name %>
+      <%= f.submit "Choisir la crypto " %>
+    <% end %>
